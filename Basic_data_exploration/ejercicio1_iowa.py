@@ -1,7 +1,7 @@
 import pandas as pd
 import datetime
 
-iowa_file_path = 'train.csv'
+iowa_file_path = '../train.csv'
 
 home_data = pd.read_csv(iowa_file_path)
 
@@ -25,3 +25,4 @@ newest_home_age = current_year - home_data['YearBuilt'].max()
 # Comprobación de resultados en consola (reemplazo de step_2.check())
 print(f"Average lot size: {avg_lot_size}")
 print(f"Newest home age: {newest_home_age}")
+
